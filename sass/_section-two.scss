@@ -1,0 +1,190 @@
+@import "style.scss";
+
+.container {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.container > div {
+    width: 75%;
+    margin: auto;
+}
+
+.container-blue {
+    background-color: $cl-blue;
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .coaching-left {
+        flex-basis: 40%;
+
+        img{
+            width: 80%;
+        }
+
+        .coaching-ellipse {
+            position: absolute;
+            top: -40px;
+            left: -170px;
+            width: 50%;
+        }
+    }
+
+    .coaching-right {
+        flex-basis: 55%;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 200;
+            line-height: 1.1;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .pink-ellipse {
+            width: 10%;
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+        }
+
+        .blue-ellipse {
+            width: 15%;
+            position: absolute;
+            right: 50px;
+            bottom: 40px;
+        }
+    }
+
+    .btn {
+        background-color: $thick-blue;
+        border: none;
+    }
+}
+
+.container-gray {
+    background-color: #fafafa;
+    padding: 150px 0 50px;
+}
+
+.container-gray > div {
+    
+    & > h3 {
+        font-size: 32px;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .pink-ellipse {
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+    }
+
+    .half-circle {
+        position: absolute;
+        bottom: -10px;
+        left: 40px;
+    }
+
+    .blue-ellipse2 {
+        position: absolute;
+        top: 60px;
+        right: 300px;
+    }
+
+    .pink-ellipse2 {
+        position: absolute;
+        top: 60px;
+        right: 230px;
+    } 
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .card {
+        flex-basis: 31%;
+        padding: 40px 30px;
+        background-color: $cl-white;
+        box-shadow: 0 0 15px rgba(0,0,0,0.12);
+
+        img {
+            width: 10%;
+            display: inline-block;
+        }
+
+        .btn {
+            background-color: $cl-red;
+            vertical-align: middle;
+            margin-top: 25px;
+        }
+    }
+}
+
+.container-work {
+    background-color: $cl-blue;
+    text-align: center;
+    padding: 70px 0;
+    margin-top: 70px;
+
+    & > div {
+
+        & > h3 {
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        & > p {
+            width: 40%;
+            margin: auto;
+        }
+
+        .card {
+            background-color: inherit;
+            box-shadow: none;
+            flex-basis: 33%;
+
+            img {
+                width: 20%;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 15px;
+            }
+
+            .pink-ellipse3 {
+                width: 10%;
+                position: absolute;
+                top: -20px;
+                right: 30px
+            }
+
+            .work-ecllipse {
+                width: 6%;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}

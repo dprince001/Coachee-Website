@@ -1,0 +1,32 @@
+@import "style.scss";
+
+
+.cta {
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    margin: 70px 0 40px;
+
+    div {
+        padding: 120px 0;
+        text-align: center;
+        color: $cl-white;
+        width: 47%;
+        margin: auto;
+
+        p:nth-of-type(2) {
+            font-size: 38px;
+            line-height: 1.05;
+            margin: 10px 0 40px;
+        }
+
+        .btn {
+            background-color: $cl-red;
+        }
+    }
+}
+
+footer {
+    padding-bottom: 30px;
+    text-align: center;
+}
